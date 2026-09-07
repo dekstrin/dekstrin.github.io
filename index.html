@@ -332,7 +332,7 @@ const LVL_T = {
   '—':{el:'Χωρίς επίπεδο',en:'No level',ru:'Без уровня'}
 };
 const T = {
-  el:{title:'Επιμορφωτικά Κέντρα',subtitle:'Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας · Σχολική χρονιά 2026–27',h1:'Βρείτε απογευματινό μάθημα κοντά σας',
+  el:{title:'Επιμορφωτικά Κέντρα',subtitle:'Ανεπίσημος οδηγός · Σχολική χρονιά 2026–27',h1:'Βρείτε απογευματινό μάθημα κοντά σας',
     ph:'Μάθημα, κέντρο, περιοχή… π.χ. κεραμική, Λακατάμεια, ιταλικά',sections:'τμήματα',subjects:'θέματα',centers:'κέντρα',districts:'επαρχίες',popular:'Δημοφιλή:',
     filters:'Φίλτρα',district:'Επαρχία',day:'Ημέρα',startTime:'Ώρα έναρξης',category:'Κατηγορία',subject:'Θέμα',level:'Επίπεδο',clear:'Καθαρισμός',subPh:'Αναζήτηση θέματος…',
     sort:'Ταξινόμηση',s_name:'Θέμα Α–Ω',s_count:'Περισσότερα τμήματα',s_dist:'Επαρχία',s_time:'Ημέρα & ώρα',s_center:'Κέντρο',
@@ -341,10 +341,10 @@ const T = {
     inCenters:(n,c)=>`${n} ${n===1?'τμήμα':'τμήματα'} σε ${c} ${c===1?'κέντρο':'κέντρα'}`,
     more:n=>`Ακόμη ${n} ${n===1?'τμήμα':'τμήματα'}`,less:'Λιγότερα',expandAll:'Άνοιγμα όλων',collapseAll:'Κλείσιμο όλων',
     noRes:'Δεν βρέθηκαν τμήματα',noResHint:'Δοκιμάστε λιγότερα φίλτρα ή άλλη ορθογραφία.',savedEmpty:'Δεν έχετε αποθηκεύσει τμήματα ακόμη — πατήστε το αστέρι δίπλα σε ένα τμήμα.',
-    apply:n=>`Εμφάνιση ${n} ${n===1?'τμήματος':'τμημάτων'}`,source:'Πηγή δεδομένων: επίσημος κατάλογος Επιμορφωτικών Κέντρων (ανάκτηση 7 Σεπ 2026). Επιβεβαιώστε ώρες και εγγραφές στο',
+    apply:n=>`Εμφάνιση ${n} ${n===1?'τμήματος':'τμημάτων'}`,source:'Ανεπίσημη σελίδα, δεν σχετίζεται με το Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας. Τα δεδομένα προέρχονται από τον δημόσιο κατάλογο των Επιμορφωτικών Κέντρων (ανάκτηση 7 Σεπ 2026) και μπορεί να έχουν αλλάξει. Επιβεβαιώστε ώρες και εγγραφές στην επίσημη σελίδα:',
     col_sub:'Θέμα',col_dist:'Επαρχία',col_center:'Κέντρο επιμόρφωσης',col_day:'Ημέρα',col_time:'Ώρα',col_lvl:'Επίπεδο',search:'Αναζήτηση',favOnly:'Μόνο αποθηκευμένα',
     q_greek:'Ελληνικά για ξένους',q_pilates:'Πιλάτες',q_paint:'Ζωγραφική',q_dance:'Παραδοσιακοί χοροί',q_sat:'Σάββατο πρωί',q_cook:'Μαγειρική'},
-  en:{title:'Adult Education Centres',subtitle:'Cyprus Ministry of Education, Sport and Youth · School year 2026–27',h1:'Find an evening class near you',
+  en:{title:'Adult Education Centres',subtitle:'Unofficial guide · School year 2026–27',h1:'Find an evening class near you',
     ph:'Subject, centre, area… e.g. pottery, Lakatamia, Italian',sections:'classes',subjects:'subjects',centers:'centres',districts:'districts',popular:'Popular:',
     filters:'Filters',district:'District',day:'Day',startTime:'Start time',category:'Category',subject:'Subject',level:'Level',clear:'Clear',subPh:'Search subjects…',
     sort:'Sort',s_name:'Subject A–Z',s_count:'Most classes',s_dist:'District',s_time:'Day & time',s_center:'Centre',
@@ -353,10 +353,10 @@ const T = {
     inCenters:(n,c)=>`${n} ${n===1?'class':'classes'} in ${c} ${c===1?'centre':'centres'}`,
     more:n=>`${n} more`,less:'Show less',expandAll:'Expand all',collapseAll:'Collapse all',
     noRes:'No classes found',noResHint:'Try fewer filters or a different spelling.',savedEmpty:'Nothing saved yet — tap the star next to a class.',
-    apply:n=>`Show ${n} ${n===1?'class':'classes'}`,source:'Data source: official Adult Education Centres catalogue (retrieved 7 Sep 2026). Confirm times and enrolment at',
+    apply:n=>`Show ${n} ${n===1?'class':'classes'}`,source:'Unofficial page, not affiliated with the Cyprus Ministry of Education, Sport and Youth. Data comes from the public Adult Education Centres catalogue (retrieved 7 Sep 2026) and may have changed since. Confirm times and enrolment on the official page:',
     col_sub:'Subject',col_dist:'District',col_center:'Centre',col_day:'Day',col_time:'Time',col_lvl:'Level',search:'Search',favOnly:'Saved only',
     q_greek:'Greek for foreigners',q_pilates:'Pilates',q_paint:'Painting',q_dance:'Traditional dances',q_sat:'Saturday morning',q_cook:'Cooking'},
-  ru:{title:'Центры образования взрослых',subtitle:'Министерство образования, спорта и молодёжи Кипра · Учебный год 2026–27',h1:'Найдите вечерние курсы рядом с вами',
+  ru:{title:'Центры образования взрослых',subtitle:'Неофициальный справочник · Учебный год 2026–27',h1:'Найдите вечерние курсы рядом с вами',
     ph:'Предмет, центр, район… напр. керамика, Лакатамия, итальянский',sections:'групп',subjects:'предметов',centers:'центров',districts:'округов',popular:'Популярное:',
     filters:'Фильтры',district:'Округ',day:'День',startTime:'Время начала',category:'Категория',subject:'Предмет',level:'Уровень',clear:'Сбросить',subPh:'Поиск предмета…',
     sort:'Сортировка',s_name:'Предмет А–Я',s_count:'Больше групп',s_dist:'Округ',s_time:'День и время',s_center:'Центр',
@@ -365,7 +365,7 @@ const T = {
     inCenters:(n,c)=>`${n} ${ru_pl(n,'группа','группы','групп')} в ${c} ${ru_pl(c,'центре','центрах','центрах')}`,
     more:n=>`Ещё ${n}`,less:'Свернуть',expandAll:'Раскрыть все',collapseAll:'Свернуть все',
     noRes:'Ничего не найдено',noResHint:'Попробуйте снять часть фильтров или изменить запрос.',savedEmpty:'В избранном пока пусто — нажмите звёздочку рядом с группой.',
-    apply:n=>`Показать ${n} ${ru_pl(n,'группу','группы','групп')}`,source:'Источник: официальный каталог центров образования взрослых (снято 7 сен 2026). Время и запись уточняйте на',
+    apply:n=>`Показать ${n} ${ru_pl(n,'группу','группы','групп')}`,source:'Неофициальная страница, не связана с Министерством образования, спорта и молодёжи Кипра. Данные взяты из открытого каталога центров образования взрослых (снято 7 сен 2026) и могли измениться. Время и запись уточняйте на официальной странице:',
     col_sub:'Предмет',col_dist:'Округ',col_center:'Учебный центр',col_day:'День',col_time:'Время',col_lvl:'Уровень',search:'Поиск',favOnly:'Только избранное',
     q_greek:'Греческий для иностранцев',q_pilates:'Пилатес',q_paint:'Живопись',q_dance:'Народные танцы',q_sat:'Суббота утром',q_cook:'Кулинария'}
 };
