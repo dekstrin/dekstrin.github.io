@@ -237,6 +237,7 @@ svg{display:block}
       <div style="min-width:0"><div class="brand-t" data-t="title"></div><div class="brand-s" data-t="subtitle"></div></div>
     </div>
     <div class="hdr-r">
+      <a class="favbtn" href="https://eforms.schools.ac.cy/el/epimorfotika" target="_blank" rel="noopener" style="text-decoration:none"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand)"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg><span class="t" data-t="official"></span></a>
       <div class="seg" id="lang" role="group" aria-label="Language">
         <button data-lang="el">ΕΛ</button><button data-lang="en">EN</button><button data-lang="ru">RU</button>
       </div>
@@ -343,7 +344,7 @@ const T = {
     noRes:'Δεν βρέθηκαν τμήματα',noResHint:'Δοκιμάστε λιγότερα φίλτρα ή άλλη ορθογραφία.',savedEmpty:'Δεν έχετε αποθηκεύσει τμήματα ακόμη — πατήστε το αστέρι δίπλα σε ένα τμήμα.',
     apply:n=>`Εμφάνιση ${n} ${n===1?'τμήματος':'τμημάτων'}`,source:'Ανεπίσημη σελίδα, δεν σχετίζεται με το Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας. Τα δεδομένα προέρχονται από τον δημόσιο κατάλογο των Επιμορφωτικών Κέντρων (ανάκτηση 7 Σεπ 2026) και μπορεί να έχουν αλλάξει. Επιβεβαιώστε ώρες και εγγραφές στην επίσημη σελίδα:',
     col_sub:'Θέμα',col_dist:'Επαρχία',col_center:'Κέντρο επιμόρφωσης',col_day:'Ημέρα',col_time:'Ώρα',col_lvl:'Επίπεδο',search:'Αναζήτηση',favOnly:'Μόνο αποθηκευμένα',
-    q_greek:'Ελληνικά για ξένους',q_pilates:'Πιλάτες',q_paint:'Ζωγραφική',q_dance:'Παραδοσιακοί χοροί',q_sat:'Σάββατο πρωί',q_cook:'Μαγειρική'},
+    official:'Επίσημη σελίδα',q_greek:'Ελληνικά για ξένους',q_pilates:'Πιλάτες',q_paint:'Ζωγραφική',q_dance:'Παραδοσιακοί χοροί',q_sat:'Σάββατο πρωί',q_cook:'Μαγειρική'},
   en:{title:'Adult Education Centres',subtitle:'Unofficial guide · School year 2026–27',h1:'Find an evening class near you',
     ph:'Subject, centre, area… e.g. pottery, Lakatamia, Italian',sections:'classes',subjects:'subjects',centers:'centres',districts:'districts',popular:'Popular:',
     filters:'Filters',district:'District',day:'Day',startTime:'Start time',category:'Category',subject:'Subject',level:'Level',clear:'Clear',subPh:'Search subjects…',
@@ -355,7 +356,7 @@ const T = {
     noRes:'No classes found',noResHint:'Try fewer filters or a different spelling.',savedEmpty:'Nothing saved yet — tap the star next to a class.',
     apply:n=>`Show ${n} ${n===1?'class':'classes'}`,source:'Unofficial page, not affiliated with the Cyprus Ministry of Education, Sport and Youth. Data comes from the public Adult Education Centres catalogue (retrieved 7 Sep 2026) and may have changed since. Confirm times and enrolment on the official page:',
     col_sub:'Subject',col_dist:'District',col_center:'Centre',col_day:'Day',col_time:'Time',col_lvl:'Level',search:'Search',favOnly:'Saved only',
-    q_greek:'Greek for foreigners',q_pilates:'Pilates',q_paint:'Painting',q_dance:'Traditional dances',q_sat:'Saturday morning',q_cook:'Cooking'},
+    official:'Official page',q_greek:'Greek for foreigners',q_pilates:'Pilates',q_paint:'Painting',q_dance:'Traditional dances',q_sat:'Saturday morning',q_cook:'Cooking'},
   ru:{title:'Центры образования взрослых',subtitle:'Неофициальный справочник · Учебный год 2026–27',h1:'Найдите вечерние курсы рядом с вами',
     ph:'Предмет, центр, район… напр. керамика, Лакатамия, итальянский',sections:'групп',subjects:'предметов',centers:'центров',districts:'округов',popular:'Популярное:',
     filters:'Фильтры',district:'Округ',day:'День',startTime:'Время начала',category:'Категория',subject:'Предмет',level:'Уровень',clear:'Сбросить',subPh:'Поиск предмета…',
@@ -367,7 +368,7 @@ const T = {
     noRes:'Ничего не найдено',noResHint:'Попробуйте снять часть фильтров или изменить запрос.',savedEmpty:'В избранном пока пусто — нажмите звёздочку рядом с группой.',
     apply:n=>`Показать ${n} ${ru_pl(n,'группу','группы','групп')}`,source:'Неофициальная страница, не связана с Министерством образования, спорта и молодёжи Кипра. Данные взяты из открытого каталога центров образования взрослых (снято 7 сен 2026) и могли измениться. Время и запись уточняйте на официальной странице:',
     col_sub:'Предмет',col_dist:'Округ',col_center:'Учебный центр',col_day:'День',col_time:'Время',col_lvl:'Уровень',search:'Поиск',favOnly:'Только избранное',
-    q_greek:'Греческий для иностранцев',q_pilates:'Пилатес',q_paint:'Живопись',q_dance:'Народные танцы',q_sat:'Суббота утром',q_cook:'Кулинария'}
+    official:'Официальный сайт',q_greek:'Греческий для иностранцев',q_pilates:'Пилатес',q_paint:'Живопись',q_dance:'Народные танцы',q_sat:'Суббота утром',q_cook:'Кулинария'}
 };
 function ru_pl(n,a,b,c){n=Math.abs(n)%100;const n1=n%10;if(n>10&&n<20)return c;if(n1>1&&n1<5)return b;if(n1===1)return a;return c}
 
